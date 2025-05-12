@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="text-align: center;"><b>This is an equation:</b></p>
+    <p style="text-align: center;">(a+b)<sup>3</sup>=a<sup>3</sup>+3a<sup>2</sup>b+3ab<sup>2</sup>+b<sup>3</sup></p>
+    <!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Comments Box for Image</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .image-container {
+      text-align: center;
+    }
+    .comments-box {
+      margin-top: 20px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      resize: vertical;
+    }
+    .comment {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+    .submit-btn {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <p style="text-align: center;"><b>This is an image:</b></p>
+    <p style="text-align: center;"><img src="C:\Users\mdsha\pic/images.jpeg"> </p>
+  </div>
+
+  <div class="comments-box">
+    <h3>Leave a Comment</h3>
+    <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+    <button class="submit-btn" onclick="addComment()">Post Comment</button>
+    <div id="commentsSection"></div>
+  </div>
+
+  <script>
+    function addComment() {
+      var commentText = document.getElementById("commentInput").value.trim();
+      if (commentText !== "") {
+        var commentDiv = document.createElement("div");
+        commentDiv.className = "comment";
+        commentDiv.textContent = commentText;
+        document.getElementById("commentsSection").appendChild(commentDiv);
+        document.getElementById("commentInput").value = "";
+      }
+    }
+  </script>
+
+</body>
+
+    <p style="text-align: center;"><b>This is a Link:</b></p>
+    <p style="text-align: center;"><a href="https://www.facebook.com/md.shakil.khan.47038/">My Facebook account Link</a></p>
+    <p style="text-align: center;"><b>This is an audio:</b></p>
+    <P style="text-align: center;"><audio controls autoplay mutab loop><source src="C:\Users\mdsha\Music/audio.mp3"></audio></p>
+    <p style="text-align: center;"><b>This is an video:</b></p>
+    <p style="text-align: center;"><video controls autoplay mutab loop><source src="C:\Users\mdsha\Videos/video.mp4"></video></p>
+    <p style="text-align: center;"><b>This is an PDF:</b></p>
+    <p style="text-align: center;"><iframe src="C:\Users\mdsha\4-1\E-Commarce and web programming/part1.pdf" frameborder="0" width="50%" height="500"></iframe></p>
+</body>
+</html>
